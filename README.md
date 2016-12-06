@@ -1,3 +1,7 @@
+[![Build Status](https://travis-ci.org/shufo/plug_rate_limit_redis.svg?branch=master)](https://travis-ci.org/shufo/plug_rate_limit_redis)
+[![hex.pm version](https://img.shields.io/hexpm/v/plug_rate_limit_redis.svg)](https://hex.pm/packages/plug_rate_limit_redis)
+[![hex.pm](https://img.shields.io/hexpm/l/plug_rate_limit_redis.svg)](https://github.com/shufo/plug_rate_limit_redis/blob/master/LICENSE)
+
 # plug_rate_limit_redis
 
 An Elixir plug that rate limiting with redis.
