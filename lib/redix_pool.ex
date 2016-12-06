@@ -17,14 +17,6 @@ defmodule PlugRateLimitRedis.RedixPool do
     supervise(redix_workers, strategy: :one_for_one, name: __MODULE__)
   end
 
-  # def command(command) do
-  #   :poolboy.transaction(:redix_poolboy, &Redix.command(&1, command))
-  # end
-  #
-  # def pipeline(commands) do
-  #   :poolboy.transaction(:redix_poolboy, &Redix.pipeline(&1, commands))
-  # end
-
   def command(command) do
     Redix.command(:"redix_#{random_index()}", command)
   end
