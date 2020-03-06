@@ -24,7 +24,7 @@ defmodule PlugRateLimitRedis.Mixfile do
 
   defp deps do
     [{:redix, ">= 0.0.0"},
-     {:cowboy, "~> 1.0.0"},
+     {:cowboy, "~> 1.1.2"},
      {:plug, "~> 1.0"},
      {:ex_doc, ">= 0.0.0", only: :dev},
     ]
